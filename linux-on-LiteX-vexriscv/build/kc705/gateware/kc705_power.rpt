@@ -1,0 +1,276 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date             : Tue Jan 10 14:35:33 2023
+| Host             : riolet running 64-bit Ubuntu 20.04.4 LTS
+| Command          : report_power -file kc705_power.rpt
+| Design           : kc705
+| Device           : xc7k325tffg900-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.667        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.461        |
+| Device Static (W)        | 0.206        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 80.3         |
+| Junction Temperature (C) | 29.7         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.284 |       12 |       --- |             --- |
+| Slice Logic              |     0.522 |   124615 |       --- |             --- |
+|   Others                 |     0.410 |      487 |       --- |             --- |
+|   LUT as Logic           |     0.102 |    54177 |    203800 |           26.58 |
+|   LUT as Distributed RAM |     0.005 |     4928 |     64000 |            7.70 |
+|   Register               |     0.002 |    49343 |    407600 |           12.11 |
+|   CARRY4                 |     0.002 |      650 |     50950 |            1.28 |
+|   F7/F8 Muxes            |     0.001 |     5233 |    203800 |            2.57 |
+|   BUFG                   |    <0.001 |        5 |        32 |           15.63 |
+|   LUT as Shift Register  |    <0.001 |        2 |     64000 |           <0.01 |
+| Signals                  |     0.625 |    85712 |       --- |             --- |
+| Block RAM                |     0.315 |      445 |       445 |          100.00 |
+| MMCM                     |     0.110 |        1 |        10 |           10.00 |
+| DSPs                     |    <0.001 |        8 |       840 |            0.95 |
+| I/O                      |     0.603 |      160 |       500 |           32.00 |
+| XADC                     |     0.002 |        1 |       --- |             --- |
+| Static Power             |     0.206 |          |           |                 |
+| Total                    |     2.667 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     1.428 |       1.333 |      0.096 |
+| Vccaux    |       1.800 |     0.453 |       0.424 |      0.029 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.007 |       0.006 |      0.001 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.200 |       0.199 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       2.000 |     0.013 |       0.013 |      0.000 |
+| Vccbram   |       1.000 |     0.043 |       0.025 |      0.018 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.021 |       0.001 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------------+------------------+-----------------+
+| Clock            | Domain           | Constraint (ns) |
++------------------+------------------+-----------------+
+| clk200_p         | clk200_p         |             5.0 |
+| clkout           | clkout           |            10.0 |
+| crg_clkout0      | crg_clkout0      |             8.0 |
+| crg_clkout1      | crg_clkout1      |             2.0 |
+| crg_clkout2      | crg_clkout2      |             5.0 |
+| eth_clocks_rx    | eth_clocks_rx    |             8.0 |
+| eth_clocks_tx    | eth_clocks_tx    |             8.0 |
+| eth_rx_clk       | eth_rx_clk       |             8.0 |
+| eth_tx_clk       | eth_tx_clk       |             8.0 |
+| soclinux_mmcm_fb | soclinux_mmcm_fb |             5.0 |
++------------------+------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------------------------------------+-----------+
+| Name                                                                           | Power (W) |
++--------------------------------------------------------------------------------+-----------+
+| kc705                                                                          |     2.461 |
+|   IOBUF                                                                        |     0.004 |
+|   IOBUFDS                                                                      |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_1                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_2                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_3                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_4                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_5                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_6                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUFDS_7                                                                    |     0.004 |
+|     OBUFTDS                                                                    |     0.001 |
+|   IOBUF_1                                                                      |     0.004 |
+|   IOBUF_10                                                                     |     0.004 |
+|   IOBUF_11                                                                     |     0.004 |
+|   IOBUF_12                                                                     |     0.004 |
+|   IOBUF_13                                                                     |     0.004 |
+|   IOBUF_14                                                                     |     0.004 |
+|   IOBUF_15                                                                     |     0.004 |
+|   IOBUF_16                                                                     |     0.004 |
+|   IOBUF_17                                                                     |     0.004 |
+|   IOBUF_18                                                                     |     0.004 |
+|   IOBUF_19                                                                     |     0.004 |
+|   IOBUF_2                                                                      |     0.004 |
+|   IOBUF_20                                                                     |     0.004 |
+|   IOBUF_21                                                                     |     0.004 |
+|   IOBUF_22                                                                     |     0.004 |
+|   IOBUF_23                                                                     |     0.004 |
+|   IOBUF_24                                                                     |     0.004 |
+|   IOBUF_25                                                                     |     0.004 |
+|   IOBUF_26                                                                     |     0.004 |
+|   IOBUF_27                                                                     |     0.004 |
+|   IOBUF_28                                                                     |     0.004 |
+|   IOBUF_29                                                                     |     0.004 |
+|   IOBUF_3                                                                      |     0.004 |
+|   IOBUF_30                                                                     |     0.004 |
+|   IOBUF_31                                                                     |     0.004 |
+|   IOBUF_32                                                                     |     0.004 |
+|   IOBUF_33                                                                     |     0.004 |
+|   IOBUF_34                                                                     |     0.004 |
+|   IOBUF_35                                                                     |     0.004 |
+|   IOBUF_36                                                                     |     0.004 |
+|   IOBUF_37                                                                     |     0.004 |
+|   IOBUF_38                                                                     |     0.004 |
+|   IOBUF_39                                                                     |     0.004 |
+|   IOBUF_4                                                                      |     0.004 |
+|   IOBUF_40                                                                     |     0.004 |
+|   IOBUF_41                                                                     |     0.004 |
+|   IOBUF_42                                                                     |     0.004 |
+|   IOBUF_43                                                                     |     0.004 |
+|   IOBUF_44                                                                     |     0.004 |
+|   IOBUF_45                                                                     |     0.004 |
+|   IOBUF_46                                                                     |     0.004 |
+|   IOBUF_47                                                                     |     0.004 |
+|   IOBUF_48                                                                     |     0.004 |
+|   IOBUF_49                                                                     |     0.004 |
+|   IOBUF_5                                                                      |     0.004 |
+|   IOBUF_50                                                                     |     0.004 |
+|   IOBUF_51                                                                     |     0.004 |
+|   IOBUF_52                                                                     |     0.004 |
+|   IOBUF_53                                                                     |     0.004 |
+|   IOBUF_54                                                                     |     0.004 |
+|   IOBUF_55                                                                     |     0.004 |
+|   IOBUF_56                                                                     |     0.004 |
+|   IOBUF_57                                                                     |     0.004 |
+|   IOBUF_58                                                                     |     0.004 |
+|   IOBUF_59                                                                     |     0.004 |
+|   IOBUF_6                                                                      |     0.004 |
+|   IOBUF_60                                                                     |     0.004 |
+|   IOBUF_61                                                                     |     0.004 |
+|   IOBUF_62                                                                     |     0.004 |
+|   IOBUF_63                                                                     |     0.004 |
+|   IOBUF_64                                                                     |     0.003 |
+|   IOBUF_65                                                                     |     0.001 |
+|   IOBUF_66                                                                     |     0.001 |
+|   IOBUF_67                                                                     |     0.001 |
+|   IOBUF_68                                                                     |     0.001 |
+|   IOBUF_7                                                                      |     0.004 |
+|   IOBUF_8                                                                      |     0.004 |
+|   IOBUF_9                                                                      |     0.004 |
+|   OBUFDS                                                                       |     0.003 |
+|   SNN_3x2                                                                      |     0.862 |
+|     RANCNetworkGrid_3x2_ins                                                    |     0.854 |
+|       gencore[0].Core                                                          |     0.193 |
+|       gencore[1].Core                                                          |     0.166 |
+|       gencore[2].Core                                                          |     0.174 |
+|       gencore[3].Core                                                          |     0.147 |
+|       gencore[4].Core                                                          |     0.154 |
+|       gencore[5].OutputBus                                                     |     0.004 |
+|       load_neuron_inst_fifo                                                    |     0.001 |
+|       load_param                                                               |     0.005 |
+|     packet_loader                                                              |     0.004 |
+|       load_packet_fifo                                                         |     0.002 |
+|     spike_out_fifo                                                             |     0.002 |
+|       fifomem                                                                  |     0.002 |
+|   VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm |     0.130 |
+|     clint_logic                                                                |     0.002 |
+|     cores_0_cpu_logic_cpu                                                      |     0.024 |
+|       IBusCachedPlugin_cache                                                   |     0.002 |
+|       dataCache_2                                                              |     0.009 |
+|     cores_1_cpu_logic_cpu                                                      |     0.017 |
+|       IBusCachedPlugin_cache                                                   |     0.002 |
+|       dataCache_2                                                              |     0.004 |
+|     dBusCoherent_bmb_syncRemover                                               |     0.001 |
+|       io_output_rsp_fifo                                                       |     0.001 |
+|     peripheralBridge_logic                                                     |     0.069 |
+|     smp_exclusiveMonitor_logic                                                 |     0.001 |
++--------------------------------------------------------------------------------+-----------+
+
+

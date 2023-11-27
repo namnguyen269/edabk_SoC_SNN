@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 20 12:02:35 2022
+# Process ID: 6481
+# Current directory: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware
+# Command line: vivado -mode batch -source kc705.tcl
+# Log file: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/vivado.log
+# Journal file: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/vivado.jou
+#-----------------------------------------------------------
+source kc705.tcl

@@ -1,0 +1,1577 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Sat Jan  7 10:13:10 2023
+| Host         : riolet running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_drc -file kc705_drc.rpt
+| Design       : kc705
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: kc705
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 307
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| BUFC-1    | Warning  | Input Buffer Connections   | 8          |
+| CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| DPIP-1    | Warning  | Input pipelining           | 16         |
+| DPOP-2    | Warning  | MREG Output pipelining     | 6          |
+| PDRC-153  | Warning  | Gated clock check          | 252        |
+| REQP-1840 | Warning  | RAMB18 async control check | 20         |
+| REQP-181  | Advisory | writefirst                 | 4          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS/IBUFDS (in IOBUFDS macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_1/IBUFDS (in IOBUFDS_1 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_2/IBUFDS (in IOBUFDS_2 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_3/IBUFDS (in IOBUFDS_3 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_4/IBUFDS (in IOBUFDS_4 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_5/IBUFDS (in IOBUFDS_5 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#7 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_6/IBUFDS (in IOBUFDS_6 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#8 Warning
+Input Buffer Connections  
+Input buffer IOBUFDS_7/IBUFDS (in IOBUFDS_7 macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg input VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/memory_to_writeBack_MUL_HH_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_HL_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LH_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg multiplier stage VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/execute_to_memory_MUL_LL_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[4].Core/neuron_grid/controller/FSM_sequential_state_tick_reg_reg[0][0] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[4].Core/neuron_grid/controller/FSM_sequential_state_tick_next_reg[1]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[4].Core/neuron_grid/controller/FSM_sequential_state_tick_next_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[0] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[0]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[100] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[100]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[100]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[101] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[101]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[101]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[102] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[102]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[102]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[103] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[103]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[103]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[104] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[104]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[104]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[105] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[105]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[105]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[106] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[106]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[106]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[107] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[107]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[107]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[108] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[108]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[108]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[109] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[109]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[109]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[10] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[10]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[110] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[110]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[110]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[111] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[111]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[111]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[112] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[112]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[112]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[113] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[113]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[113]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[114] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[114]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[114]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[115] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[115]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[115]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[116] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[116]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[116]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[117] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[117]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[117]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[118] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[118]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[118]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[119] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[119]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[119]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[11] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[11]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[120] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[120]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[120]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[121] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[121]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[121]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[122] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[122]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[122]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[123] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[123]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[123]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[124] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[124]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[124]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[125] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[125]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[125]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[126] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[126]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[126]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[127] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[127]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[127]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[128] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[128]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[128]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[129] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[129]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[129]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[12] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[12]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[12]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[130] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[130]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[130]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[131] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[131]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[131]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[132] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[132]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[132]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[133] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[133]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[133]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[134] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[134]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[134]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[135] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[135]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[135]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[136] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[136]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[136]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[137] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[137]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[137]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[138] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[138]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[138]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[139] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[139]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[139]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[13] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[13]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[13]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[140] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[140]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[140]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[141] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[141]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[141]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[142] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[142]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[142]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[143] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[143]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[143]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[144] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[144]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[144]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[145] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[145]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[145]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[146] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[146]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[146]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[147] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[147]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[147]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[148] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[148]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[148]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[149] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[149]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[149]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[14] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[14]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[14]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[150] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[150]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[150]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[151] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[151]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[151]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[152] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[152]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[152]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[153] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[153]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[153]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[154] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[154]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[154]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[155] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[155]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[155]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[156] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[156]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[156]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[157] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[157]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[157]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[158] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[158]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[158]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[159] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[159]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[159]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[15] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[15]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[160] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[160]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[160]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[161] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[161]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[161]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[162] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[162]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[162]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[163] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[163]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[163]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[164] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[164]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[164]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[165] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[165]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[165]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[166] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[166]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[166]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[167] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[167]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[167]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[168] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[168]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[168]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[169] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[169]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[169]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[16] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[16]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[170] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[170]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[170]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[171] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[171]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[171]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[172] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[172]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[172]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[173] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[173]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[173]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[174] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[174]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[174]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[175] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[175]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[175]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[176] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[176]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[176]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[177] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[177]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[177]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[178] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[178]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[178]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[179] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[179]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[179]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[17] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[17]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[17]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[180] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[180]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[180]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[181] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[181]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[181]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[182] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[182]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[182]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[183] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[183]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[183]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[184] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[184]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[184]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[185] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[185]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[185]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[186] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[186]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[186]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[187] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[187]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[187]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[188] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[188]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[188]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[189] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[189]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[189]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[18] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[18]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[18]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[190] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[190]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[190]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[191] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[191]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[191]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[192] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[192]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[192]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[193] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[193]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[193]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[194] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[194]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[194]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[195] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[195]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[195]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[196] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[196]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[196]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[197] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[197]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[197]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[198] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[198]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[198]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[199] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[199]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[199]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[19] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[19]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[19]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[1] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[1]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[200] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[200]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[200]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[201] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[201]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[201]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[202] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[202]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[202]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[203] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[203]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[203]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[204] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[204]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[204]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[205] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[205]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[205]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[206] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[206]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[206]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[207] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[207]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[207]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[208] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[208]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[208]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[209] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[209]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[209]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[20] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[20]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[20]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[210] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[210]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[210]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[211] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[211]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[211]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[212] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[212]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[212]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[213] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[213]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[213]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[214] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[214]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[214]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[215] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[215]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[215]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[216] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[216]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[216]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[217] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[217]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[217]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[218] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[218]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[218]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[219] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[219]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[219]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[21] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[21]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[21]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[220] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[220]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[220]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[221] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[221]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[221]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[222] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[222]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[222]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[223] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[223]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[223]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[224] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[224]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[224]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[225] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[225]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[225]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[226] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[226]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[226]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[227] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[227]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[227]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[228] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[228]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[228]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[229] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[229]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[229]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#146 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[22] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[22]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#147 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[230] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[230]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[230]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#148 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[231] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[231]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[231]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#149 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[232] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[232]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[232]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#150 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[233] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[233]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[233]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#151 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[234] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[234]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[234]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#152 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[235] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[235]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[235]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#153 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[236] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[236]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[236]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#154 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[237] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[237]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[237]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#155 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[238] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[238]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[238]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#156 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[239] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[239]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[239]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#157 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[23] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[23]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[23]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#158 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[240] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[240]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[240]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#159 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[241] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[241]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[241]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#160 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[242] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[242]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[242]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#161 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[243] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[243]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[243]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#162 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[244] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[244]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[244]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#163 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[245] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[245]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[245]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#164 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[246] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[246]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[246]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#165 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[247] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[247]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[247]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#166 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[248] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[248]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[248]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#167 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[249] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[249]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[249]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#168 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[24] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[24]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[24]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#169 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[25] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[25]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[25]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#170 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[26] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[26]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[26]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#171 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[27] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[27]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[27]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#172 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[28] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[28]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[28]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#173 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[29] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[29]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[29]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#174 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[2] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[2]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#175 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[30] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[30]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[30]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#176 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[31] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[31]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#177 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[32] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[32]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[32]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#178 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[33] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[33]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[33]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#179 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[34] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[34]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[34]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#180 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[35] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[35]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[35]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#181 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[36] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[36]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[36]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#182 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[37] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[37]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[37]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#183 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[38] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[38]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[38]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#184 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[39] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[39]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[39]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#185 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[3] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[3]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#186 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[40] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[40]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[40]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#187 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[41] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[41]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[41]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#188 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[42] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[42]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[42]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#189 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[43] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[43]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[43]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#190 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[44] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[44]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[44]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#191 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[45] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[45]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[45]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#192 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[46] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[46]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[46]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#193 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[47] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[47]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[47]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#194 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[48] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[48]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[48]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#195 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[49] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[49]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[49]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#196 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[4] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[4]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#197 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[50] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[50]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[50]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#198 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[51] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[51]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[51]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#199 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[52] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[52]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[52]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#200 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[53] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[53]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[53]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#201 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[54] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[54]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[54]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#202 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[55] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[55]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[55]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#203 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[56] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[56]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[56]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#204 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[57] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[57]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[57]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#205 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[58] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[58]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[58]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#206 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[59] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[59]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[59]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#207 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[5] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[5]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[5]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#208 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[60] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[60]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[60]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#209 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[61] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[61]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[61]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#210 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[62] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[62]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[62]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#211 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[63] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[63]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[63]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#212 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[64] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[64]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[64]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#213 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[65] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[65]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[65]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#214 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[66] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[66]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[66]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#215 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[67] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[67]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[67]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#216 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[68] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[68]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[68]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#217 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[69] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[69]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[69]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#218 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[6] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[6]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[6]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#219 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[70] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[70]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[70]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#220 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[71] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[71]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[71]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#221 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[72] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[72]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[72]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#222 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[73] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[73]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[73]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#223 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[74] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[74]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[74]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#224 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[75] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[75]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[75]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#225 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[76] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[76]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[76]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#226 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[77] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[77]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[77]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#227 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[78] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[78]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[78]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#228 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[79] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[79]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[79]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#229 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[7] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[7]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#230 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[80] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[80]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[80]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#231 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[81] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[81]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[81]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#232 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[82] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[82]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[82]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#233 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[83] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[83]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[83]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#234 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[84] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[84]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[84]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#235 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[85] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[85]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[85]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#236 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[86] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[86]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[86]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#237 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[87] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[87]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[87]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#238 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[88] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[88]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[88]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#239 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[89] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[89]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[89]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#240 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[8] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[8]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[8]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#241 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[90] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[90]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[90]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#242 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[91] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[91]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[91]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#243 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[92] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[92]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[92]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#244 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[93] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[93]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[93]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#245 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[94] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[94]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[94]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#246 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[95] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[95]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[95]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#247 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[96] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[96]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[96]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#248 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[97] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[97]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[97]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#249 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[98] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[98]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[98]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#250 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[99] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[99]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[99]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#251 Warning
+Gated clock check  
+Net SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/E[9] is a gated clock net sourced by a combinational pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[9]_i_2/O, cell SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[5].OutputBus/Router_tb/local_in/Merge/compute_out_next_reg[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#252 Warning
+Gated clock check  
+Net SNN_3x2/packet_loader/spike_next_reg[249]_i_1_n_0 is a gated clock net sourced by a combinational pin SNN_3x2/packet_loader/spike_next_reg[249]_i_1/O, cell SNN_3x2/packet_loader/spike_next_reg[249]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[10] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[6]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[10] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[6]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[11] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[7]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[11] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[7]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[4] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[0]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[4] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[0]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[5] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[1]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[5] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[1]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[6] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[2]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[6] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[2]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[7] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[3]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[7] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[3]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[8] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[4]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[8] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[4]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[9] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[5]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRARDADDR[9] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[5]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRBWRADDR[10] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[6]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRBWRADDR[10] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[6]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRBWRADDR[11] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[7]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/neuron_num_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0 has an input control pin SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/RAM_reg_0/ADDRBWRADDR[11] (net: SNN_3x2/RANCNetworkGrid_3x2_ins/gencore[0].Core/neuron_grid/datapath/CSRAM_inst/csram_addr[7]) which is driven by a register (SNN_3x2/RANCNetworkGrid_3x2_ins/param_wen_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/dataCache_2/ways_0_data/ram_block_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_0_cpu_logic_cpu/dataCache_2/ways_1_data/ram_block_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/dataCache_2/ways_0_data/ram_block_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm/cores_1_cpu_logic_cpu/dataCache_2/ways_1_data/ram_block_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

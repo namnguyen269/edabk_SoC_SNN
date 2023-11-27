@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan  7 09:29:39 2023
+# Process ID: 7885
+# Current directory: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware
+# Command line: vivado -mode batch -source kc705.tcl
+# Log file: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/vivado.log
+# Journal file: /home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/vivado.jou
+#-----------------------------------------------------------
+source kc705.tcl
+# create_project -force -name kc705 -part xc7k325t-ffg900-2
+# set_msg_config -id {Common 17-55} -new_severity {Warning}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/RANCNetworkGrid_3x2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/buffer.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Core_3x2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Counter.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/CSRAM.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/ForwardEastWest.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/ForwardNorthSouth.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/FromLocal.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/LocalIn.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Merge2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Merge3.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/neuron_block.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/neuron_grid_3x2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/neuron_grid_controller.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/neuron_grid_datapath_3x2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/OutputBus.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/PathDecoder2Way.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/PathDecoder3Way.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Router.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/Scheduler.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/ranc3x2/SchedulerSRAM.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/load_param_fifo.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/PacketLoader.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/SNN_3x2.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/tick_gen.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/async_fifo.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/fifomem.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/rptr_empty.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/sync_ptr.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/sync_r2w.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/sync_w2r.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/async_fifo/wptr_full.v}
+# read_verilog {/home/riolet/litex/pythondata-cpu-vexriscv-smp/pythondata_cpu_vexriscv_smp/verilog/Ram_1w_1rs_Generic.v}
+# read_verilog {/home/riolet/litex/pythondata-cpu-vexriscv-smp/pythondata_cpu_vexriscv_smp/verilog/VexRiscvLitexSmpCluster_Cc2_Iw64Is8192Iy2_Dw64Ds8192Dy2_ITs4DTs4_Cdma_Ood_Wm.v}
+# read_verilog {/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v}
+# read_xdc kc705.xdc
+# set_property PROCESSING_ORDER EARLY [get_files kc705.xdc]
+# synth_design -directive default -top kc705 -part xc7k325t-ffg900-2
+Command: synth_design -directive default -top kc705 -part xc7k325t-ffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-86] Your Synthesis license expires in 0 day(s)
+INFO: [Common 17-1540] The version limit for your license is '2022.11' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7891 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1413.078 ; gain = 49.000 ; free physical = 2061 ; free virtual = 7112
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kc705' [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:21]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:46]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:49]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:82]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:92]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2032]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2036]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2040]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2131]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2135]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2139]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2230]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2234]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2238]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2329]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2333]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2337]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2428]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2432]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2436]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2527]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2531]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2535]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2626]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2630]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2634]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2725]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2729]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2733]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2791]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2795]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2800]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2804]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2885]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:2888]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:3115]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:3121]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:3526]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:3532]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5850]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5850]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5852]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5852]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5854]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5854]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5856]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5856]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5860]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5860]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5862]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5862]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5864]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5864]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5866]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5866]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5868]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5868]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5870]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5870]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5872]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5872]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5874]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5874]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5876]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5876]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5878]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5878]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5880]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5880]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5882]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5882]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5884]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5884]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5886]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:5886]
+INFO: [Synth 8-3876] $readmem data file 'kc705_rom.init' is read successfully [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25529]
+INFO: [Synth 8-3876] $readmem data file 'kc705_sram.init' is read successfully [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25544]
+INFO: [Synth 8-3876] $readmem data file 'kc705_mem.init' is read successfully [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25567]
+WARNING: [Synth 8-151] case item 7'b0010000 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:14943]
+WARNING: [Synth 8-151] case item 7'b0100000 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:14946]
+WARNING: [Synth 8-151] case item 7'b1000000 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:14949]
+WARNING: [Synth 8-151] case item 3'b100 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15107]
+WARNING: [Synth 8-151] case item 3'b101 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15110]
+WARNING: [Synth 8-151] case item 3'b110 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15113]
+WARNING: [Synth 8-151] case item 3'b111 is unreachable [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15116]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15413]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:15739]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:16296]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23641]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23670]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23684]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23770]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23860]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23888]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23900]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:23947]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24008]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24031]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24078]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24101]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24361]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24629]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24684]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:24726]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25518]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (2#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+WARNING: [Synth 8-350] instance 'IDELAYCTRL' of module 'IDELAYCTRL' requires 3 connections, but only 2 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25518]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: BUF - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (3#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+WARNING: [Synth 8-350] instance 'OSERDESE2' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25624]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE2' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31713]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: ODATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_ODATAIN_INVERTED bound to: 1'b0 
+	Parameter ODELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter ODELAY_VALUE bound to: 0 - type: integer 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE2' (4#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31713]
+WARNING: [Synth 8-350] instance 'ODELAYE2' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25649]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (5#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+WARNING: [Synth 8-350] instance 'OSERDESE2_1' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25671]
+WARNING: [Synth 8-350] instance 'ODELAYE2_1' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25696]
+WARNING: [Synth 8-350] instance 'OSERDESE2_2' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25712]
+WARNING: [Synth 8-350] instance 'ODELAYE2_2' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25737]
+WARNING: [Synth 8-350] instance 'OSERDESE2_3' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25753]
+WARNING: [Synth 8-350] instance 'ODELAYE2_3' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25778]
+WARNING: [Synth 8-350] instance 'OSERDESE2_4' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25794]
+WARNING: [Synth 8-350] instance 'ODELAYE2_4' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25819]
+WARNING: [Synth 8-350] instance 'OSERDESE2_5' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25835]
+WARNING: [Synth 8-350] instance 'ODELAYE2_5' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25860]
+WARNING: [Synth 8-350] instance 'OSERDESE2_6' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25876]
+WARNING: [Synth 8-350] instance 'ODELAYE2_6' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25901]
+WARNING: [Synth 8-350] instance 'OSERDESE2_7' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25917]
+WARNING: [Synth 8-350] instance 'ODELAYE2_7' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25942]
+WARNING: [Synth 8-350] instance 'OSERDESE2_8' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25958]
+WARNING: [Synth 8-350] instance 'ODELAYE2_8' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25983]
+WARNING: [Synth 8-350] instance 'OSERDESE2_9' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:25999]
+WARNING: [Synth 8-350] instance 'ODELAYE2_9' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26024]
+WARNING: [Synth 8-350] instance 'OSERDESE2_10' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26040]
+WARNING: [Synth 8-350] instance 'ODELAYE2_10' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26065]
+WARNING: [Synth 8-350] instance 'OSERDESE2_11' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26081]
+WARNING: [Synth 8-350] instance 'ODELAYE2_11' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26106]
+WARNING: [Synth 8-350] instance 'OSERDESE2_12' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26122]
+WARNING: [Synth 8-350] instance 'ODELAYE2_12' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26147]
+WARNING: [Synth 8-350] instance 'OSERDESE2_13' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26163]
+WARNING: [Synth 8-350] instance 'ODELAYE2_13' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26188]
+WARNING: [Synth 8-350] instance 'OSERDESE2_14' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26204]
+WARNING: [Synth 8-350] instance 'ODELAYE2_14' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26229]
+WARNING: [Synth 8-350] instance 'OSERDESE2_15' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26245]
+WARNING: [Synth 8-350] instance 'ODELAYE2_15' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26270]
+WARNING: [Synth 8-350] instance 'OSERDESE2_16' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26286]
+WARNING: [Synth 8-350] instance 'ODELAYE2_16' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26311]
+WARNING: [Synth 8-350] instance 'OSERDESE2_17' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26327]
+WARNING: [Synth 8-350] instance 'ODELAYE2_17' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26352]
+WARNING: [Synth 8-350] instance 'OSERDESE2_18' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26368]
+WARNING: [Synth 8-350] instance 'ODELAYE2_18' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26393]
+WARNING: [Synth 8-350] instance 'OSERDESE2_19' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26409]
+WARNING: [Synth 8-350] instance 'ODELAYE2_19' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26434]
+WARNING: [Synth 8-350] instance 'OSERDESE2_20' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26450]
+WARNING: [Synth 8-350] instance 'ODELAYE2_20' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26475]
+WARNING: [Synth 8-350] instance 'OSERDESE2_21' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26491]
+WARNING: [Synth 8-350] instance 'ODELAYE2_21' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26516]
+WARNING: [Synth 8-350] instance 'OSERDESE2_22' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26532]
+WARNING: [Synth 8-350] instance 'ODELAYE2_22' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26557]
+WARNING: [Synth 8-350] instance 'OSERDESE2_23' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26573]
+WARNING: [Synth 8-350] instance 'ODELAYE2_23' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26598]
+WARNING: [Synth 8-350] instance 'OSERDESE2_24' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26614]
+WARNING: [Synth 8-350] instance 'ODELAYE2_24' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26639]
+WARNING: [Synth 8-350] instance 'OSERDESE2_25' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26655]
+WARNING: [Synth 8-350] instance 'ODELAYE2_25' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26680]
+WARNING: [Synth 8-350] instance 'OSERDESE2_26' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26696]
+WARNING: [Synth 8-350] instance 'ODELAYE2_26' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26721]
+WARNING: [Synth 8-350] instance 'OSERDESE2_27' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26737]
+INFO: [Synth 8-6157] synthesizing module 'ODELAYE2__parameterized0' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31713]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: ODATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_ODATAIN_INVERTED bound to: 1'b0 
+	Parameter ODELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter ODELAY_VALUE bound to: 6 - type: integer 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ODELAYE2__parameterized0' (5#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31713]
+WARNING: [Synth 8-350] instance 'ODELAYE2_27' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26766]
+INFO: [Synth 8-6157] synthesizing module 'IOBUFDS' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23632]
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS' (6#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23632]
+WARNING: [Synth 8-350] instance 'IOBUFDS' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26776]
+WARNING: [Synth 8-350] instance 'OSERDESE2_28' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26789]
+WARNING: [Synth 8-350] instance 'ODELAYE2_28' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26818]
+WARNING: [Synth 8-350] instance 'IOBUFDS_1' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26828]
+WARNING: [Synth 8-350] instance 'OSERDESE2_29' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26841]
+WARNING: [Synth 8-350] instance 'ODELAYE2_29' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26870]
+WARNING: [Synth 8-350] instance 'IOBUFDS_2' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26880]
+WARNING: [Synth 8-350] instance 'OSERDESE2_30' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26893]
+WARNING: [Synth 8-350] instance 'ODELAYE2_30' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26922]
+WARNING: [Synth 8-350] instance 'IOBUFDS_3' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26932]
+WARNING: [Synth 8-350] instance 'OSERDESE2_31' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26945]
+WARNING: [Synth 8-350] instance 'ODELAYE2_31' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26974]
+WARNING: [Synth 8-350] instance 'IOBUFDS_4' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26984]
+WARNING: [Synth 8-350] instance 'OSERDESE2_32' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:26997]
+WARNING: [Synth 8-350] instance 'ODELAYE2_32' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27026]
+WARNING: [Synth 8-350] instance 'IOBUFDS_5' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27036]
+WARNING: [Synth 8-350] instance 'OSERDESE2_33' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27049]
+WARNING: [Synth 8-350] instance 'ODELAYE2_33' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27078]
+WARNING: [Synth 8-350] instance 'IOBUFDS_6' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27088]
+WARNING: [Synth 8-350] instance 'OSERDESE2_34' of module 'OSERDESE2' requires 27 connections, but only 17 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27101]
+WARNING: [Synth 8-350] instance 'ODELAYE2_34' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27130]
+WARNING: [Synth 8-350] instance 'IOBUFDS_7' of module 'IOBUFDS' requires 5 connections, but only 4 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27140]
+WARNING: [Synth 8-350] instance 'OSERDESE2_35' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27153]
+WARNING: [Synth 8-350] instance 'ODELAYE2_35' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27178]
+WARNING: [Synth 8-350] instance 'OSERDESE2_36' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27194]
+WARNING: [Synth 8-350] instance 'ODELAYE2_36' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27219]
+WARNING: [Synth 8-350] instance 'OSERDESE2_37' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27235]
+WARNING: [Synth 8-350] instance 'ODELAYE2_37' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27260]
+WARNING: [Synth 8-350] instance 'OSERDESE2_38' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27276]
+WARNING: [Synth 8-350] instance 'ODELAYE2_38' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27301]
+WARNING: [Synth 8-350] instance 'OSERDESE2_39' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27317]
+WARNING: [Synth 8-350] instance 'ODELAYE2_39' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27342]
+WARNING: [Synth 8-350] instance 'OSERDESE2_40' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27358]
+WARNING: [Synth 8-350] instance 'ODELAYE2_40' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27383]
+WARNING: [Synth 8-350] instance 'OSERDESE2_41' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27399]
+WARNING: [Synth 8-350] instance 'ODELAYE2_41' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27424]
+WARNING: [Synth 8-350] instance 'OSERDESE2_42' of module 'OSERDESE2' requires 27 connections, but only 13 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27440]
+WARNING: [Synth 8-350] instance 'ODELAYE2_42' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27465]
+WARNING: [Synth 8-350] instance 'OSERDESE2_43' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27481]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:25967]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: IFD - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (7#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:25967]
+WARNING: [Synth 8-350] instance 'ISERDESE2' of module 'ISERDESE2' requires 28 connections, but only 15 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27507]
+WARNING: [Synth 8-350] instance 'ODELAYE2_43' of module 'ODELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27534]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (8#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+WARNING: [Synth 8-350] instance 'IDELAYE2' of module 'IDELAYE2' requires 12 connections, but only 7 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27553]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (9#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+WARNING: [Synth 8-350] instance 'OSERDESE2_44' of module 'OSERDESE2' requires 27 connections, but only 16 given [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:27576]
+INFO: [Common 17-14] Message 'Synth 8-350' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'XADC' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53521]
+	Parameter INIT_40 bound to: 16'b1001000000000000 
+	Parameter INIT_41 bound to: 16'b0010111011110000 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0100011100000001 
+	Parameter INIT_49 bound to: 16'b0000000000001111 
+	Parameter INIT_4A bound to: 16'b0100011100000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101100110011001 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1101110111011101 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101000100010001 
+	Parameter INIT_56 bound to: 16'b1001000111101011 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (10#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:53521]
+WARNING: [Synth 8-689] width (7) of port connection 'CHANNEL' does not match port width (5) of module 'XADC' [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:34011]
+INFO: [Synth 8-6157] synthesizing module 'SNN_3x2' [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/SNN_3x2.v:1]
+	Parameter WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sync_2ff' [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+	Parameter ASIZE bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2ff' (11#1) [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+INFO: [Synth 8-6157] synthesizing module 'sync_2ff__parameterized0' [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+	Parameter ASIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2ff__parameterized0' (11#1) [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+INFO: [Synth 8-6157] synthesizing module 'sync_2ff__parameterized1' [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+	Parameter ASIZE bound to: 250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_2ff__parameterized1' (11#1) [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/sync_2ff.v:20]
+ERROR: [Synth 8-685] variable 'spike_out' should not be used in output port connection [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/SNN_3x2.v:141]
+ERROR: [Synth 8-6156] failed synthesizing module 'SNN_3x2' [/home/riolet/litex/linux-on-LiteX-vexriscv/ranc_sequence/SNN_3x2.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'kc705' [/home/riolet/litex/linux-on-LiteX-vexriscv/build/kc705/gateware/kc705.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1481.828 ; gain = 117.750 ; free physical = 2061 ; free virtual = 7111
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 109 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  7 09:29:53 2023...
